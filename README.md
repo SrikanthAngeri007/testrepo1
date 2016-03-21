@@ -41,21 +41,19 @@ Wrapper Recipes:
 | default.rb          | The outermost wrapper to call all the recipes required for synching up build-slaves                                |
 
 
-NOTE: Multiple Extension support and Uninstallation are only available for binary packages and not for source installations.
-
-
 Supported Distro and Arch 
 =========================
 This cookbook supports:
-1. Architecture: x86_64, ppc64le
-2. Distributions: RHEL, UBUNTU, CentOS
+* Architecture: x86_64, ppc64le
+* Distributions: RHEL, UBUNTU, CentOS
 
 Usage
 ======
 This cookbook is run via autoport tool by overriding default attributes, whose values are fetched 
-from latest `data/ManagedList.json file`
+from latest `data/ManagedList.json file`.
+
 Although to run it independantly set/override attributes (check attributes/default.rb for complete list) and set 
 the run_list appropriately as
 
-`buildServer::<recipe-name>`
-`buildServer::default` (To run all recipes used during synch)
+* `buildServer::<recipe-name>`
+* `buildServer::default` (To run all recipes used during synch)
